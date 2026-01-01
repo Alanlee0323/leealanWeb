@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    container_name: leealan-web
+    restart: always
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared-tunnel
+    restart: always
+    command: tunnel --no-autoupdate run --token eyJhIjoiYjAzMjMyOGFlN2Y1YTU1N2FhMDUxNjhmZmY4MGU3ZTIiLCJ0IjoiYjY3NDkwYTEtM2QyZi00NjZiLWI2MjUtNDA4OGE1NmFkMWVkIiwicyI6IlpHUTNOV0kzWTJRdE0yWXpPQzAwTTJaaUxXSTBNakF0TVRFMll6azFPVEZtTUdNMSJ9
