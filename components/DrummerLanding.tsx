@@ -94,7 +94,7 @@ const About = () => {
       
       <div className="container mx-auto px-6">
          <GlassmorphismProfileCard 
-            avatarUrl="https://picsum.photos/400/400?grayscale" // Placeholder for actual drummer photo
+            avatarUrl="/drummer-photo.jpg" 
             name="Alan Lee"
             title="Session Drummer & Educator"
             bio={biography}

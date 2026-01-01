@@ -65,7 +65,7 @@ export const careerTimeline: CareerEvent[] = [
   {
     id: "20250625-riki",
     date: "2025.06.25",
-    title: "RIKI - 𝗖𝗛𝗢𝗦𝗘𝗡",
+    title: "RIKI - 𝗖hosen Festival",
     location: "三創生活園區",
     role: "專場鼓手",
     category: "performance"
@@ -97,7 +97,7 @@ export const careerTimeline: CareerEvent[] = [
   },
   {
     id: "c3",
-    date: "2023.09 - Present",
+    date: "2023.09 - 2025.06",
     title: "IF MUSIC STUDIO",
     location: "基隆",
     role: "爵士鼓老師",
