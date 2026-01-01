@@ -255,7 +255,7 @@ const GearSection = () => (
             <ul className="space-y-4">
               {group.items.map((item, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-sm font-mono text-metal-accent">
-                   <span className="text-metal-highlight mt-1 opacity-50">>></span>
+                   <span className="text-metal-highlight mt-1 opacity-50">&gt;&gt;</span>
                    {item}
                 </li>
               ))}
