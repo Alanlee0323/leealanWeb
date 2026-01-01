@@ -30,7 +30,7 @@ export interface YoutubeVideo {
   id: string;
   videoId: string; // YouTube ID
   title: string;
-  category: 'cover' | 'performance' | 'lesson';
+  category: 'cover' | 'performance' | 'lesson' | 'live';
   views?: string;
 }
 

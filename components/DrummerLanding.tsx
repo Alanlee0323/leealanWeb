@@ -64,13 +64,13 @@ const LiquidHero = () => (
         transition={{ duration: 0.8 }}
       >
         <span className="inline-block mb-4 px-4 py-1 rounded-full border border-metal-highlight/30 text-metal-accent font-orbitron text-xs tracking-[0.3em] uppercase backdrop-blur-sm">
-          Precision Audio
+          Drummer
         </span>
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-audiowide text-metal-highlight mb-6 tracking-tighter drop-shadow-glow-silver">
           ALAN LEE
         </h1>
         <p className="max-w-2xl mx-auto text-metal-accent font-orbitron text-lg md:text-xl leading-relaxed mb-12">
-          Merging human rhythm with mechanical precision. Session drummer and rhythmic architect for the digital age.
+          I am the current drummer for the act RIKI, specializing in minimalist funk and groove-based music. Currently open to session work and collab.
         </p>
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
@@ -99,7 +99,7 @@ const About = () => {
             title="Session Drummer & Educator"
             bio={biography}
             socialLinks={[
-              { id: 'instagram', icon: Instagram, label: 'Instagram', href: 'https://instagram.com' },
+              { id: 'instagram', icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/leealannn/' },
               { id: 'youtube', icon: Youtube, label: 'YouTube', href: 'https://youtube.com' },
               { id: 'mail', icon: Mail, label: 'Email', href: 'mailto:contact@leealan-tech.com' },
             ]}
@@ -198,7 +198,7 @@ const ExperienceTimeline = () => {
 const VideoGrid = () => (
   <section className="py-32 bg-metal-surface relative overflow-hidden">
     <div className="container mx-auto px-6 relative z-10">
-      <h2 className="text-4xl md:text-6xl font-audiowide text-metal-highlight mb-16 text-center">Signal Output</h2>
+      <h2 className="text-4xl md:text-6xl font-audiowide text-metal-highlight mb-16 text-center">Videos</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {drumVideos.map((video) => (
           <div key={video.id} className="group relative aspect-video bg-black rounded-xl overflow-hidden border border-metal-highlight/20 shadow-metal hover:border-metal-highlight/60 transition-all duration-500">

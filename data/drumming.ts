@@ -1,27 +1,25 @@
-
-
 import { YoutubeVideo, Gig, CareerEvent, TeachingService } from '../types';
 
 export const drumVideos: YoutubeVideo[] = [
   {
     id: "v1",
-    videoId: "dQw4w9WgXcQ", // Placeholder: Replace with real ID
-    title: "Poly-rhythmic Analysis [Cover]",
-    category: "cover",
+    videoId: "Qjk7RfAIUcc",
+    title: "imma臺北beach [live]",
+    category: "live",
     views: "12K"
   },
   {
     id: "v2",
-    videoId: "dQw4w9WgXcQ", // Placeholder
-    title: "Live at The Void - Solo Improvisation",
-    category: "performance",
+    videoId: "xLmcmu5BfXQ",
+    title: "草莓冰淇淋加水烏龜 ft. 王 from icyball冰球樂團 [live]",
+    category: "live",
     views: "5.4K"
   },
   {
     id: "v3",
-    videoId: "dQw4w9WgXcQ", // Placeholder
-    title: "Linear Drumming Concepts v2.0",
-    category: "lesson",
+    videoId: "7H6NL5sPm-0",
+    title: "yonige - 対岸の彼女 [cover]",
+    category: "cover",
     views: "8.1K"
   }
 ];
@@ -57,6 +55,30 @@ export const biography = `Drummer of RIKI`;
 
 export const careerTimeline: CareerEvent[] = [
   {
+    id: "20251225-riki",
+    date: "2025.12.25",
+    title: "RIKI - 行憲紀念趴專場",
+    location: "台北樂悠悠之口",
+    role: "專場鼓手",
+    category: "performance"
+  },
+  {
+    id: "20250625-riki",
+    date: "2025.06.25",
+    title: "RIKI - 𝗖𝗛𝗢𝗦𝗘𝗡",
+    location: "三創生活園區",
+    role: "專場鼓手",
+    category: "performance"
+  },
+  {
+    id: "20250613-riki",
+    date: "2025.06.13",
+    title: "RIKI - 學成歸國專場",
+    location: "台北樂悠悠之口",
+    role: "專場鼓手",
+    category: "performance"
+  },
+  {
     id: "c1",
     date: "2023.11",
     title: "Dave Weckl / Tom Kennedy Project",
@@ -69,7 +91,7 @@ export const careerTimeline: CareerEvent[] = [
     id: "c2",
     date: "2023.11",
     title: "Larnell Lewis 演奏講習會 & Workshop",
-    location: "台灣 Yamaha",
+    location: "IF Music Studio",
     role: "爵士鼓技師助理",
     category: "technician"
   },
@@ -80,7 +102,7 @@ export const careerTimeline: CareerEvent[] = [
     location: "基隆",
     role: "爵士鼓老師",
     category: "teaching",
-    description: "熱門音樂指標性音樂教室"
+    description: "基隆熱門音樂指標性音樂教室"
   },
   {
     id: "c4",

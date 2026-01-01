@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
               ALAN<span className="text-accent-primary">LEE</span>
             </a>
             <p className="text-text-muted text-sm leading-relaxed mb-6">
-              AI Engineer & Percussionist. Bridging the gap between intelligent systems and dynamic rhythms.
+              AI Engineer & Drummer. Coding the Beat. Drumming the Logic.
             </p>
             <div className="flex gap-4">
               <a href="mailto:alanalanalan0807@gmail.com" className="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-text-muted hover:bg-accent-primary hover:text-white transition-all">
