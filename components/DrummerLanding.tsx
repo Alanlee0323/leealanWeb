@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Calendar, Mic2, ArrowRight, ChevronDown, Check, Star, Disc, Volume2, Wrench, Award, User, Instagram, Youtube, Mail } from 'lucide-react';
-import { drumVideos, gigLog, careerTimeline, biography } from '../data/drumming';
+import { drumVideos, gigLog, careerTimeline, biography, gearList } from '../data/drumming';
 import { GlassmorphismProfileCard } from './ui/profile-card-1';
 
 // --- Reusable S33 Components ---
@@ -37,6 +37,16 @@ const LiquidCard: React.FC<{ children: React.ReactNode; className?: string }> = 
 
 const LiquidHero = () => (
   <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-metal-bg">
+    {/* Background Image Texture */}
+    <div className="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?q=80&w=2070&auto=format&fit=crop" 
+        alt="Drum Background" 
+        className="w-full h-full object-cover opacity-20 grayscale mix-blend-overlay"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-metal-bg/80 via-transparent to-metal-bg/90" />
+    </div>
+
     {/* Liquid Background */}
     <div className="absolute inset-0 overflow-hidden">
       <motion.div 
@@ -70,7 +80,7 @@ const LiquidHero = () => (
           ALAN LEE
         </h1>
         <p className="max-w-2xl mx-auto text-metal-accent font-orbitron text-lg md:text-xl leading-relaxed mb-12">
-          I am the current drummer for the act RIKI, specializing in minimalist funk and groove-based music. Currently open to session work and collab.
+          Current drummer for RIKI. Open to collab and keep it tight!
         </p>
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
@@ -221,26 +231,44 @@ const VideoGrid = () => (
   </section>
 );
 
-const FAQ = () => (
-  <section className="py-32 bg-metal-bg">
-    <div className="container mx-auto px-6 max-w-3xl">
-      <h2 className="text-4xl font-audiowide text-metal-highlight mb-12 text-center">System Queries</h2>
-      <div className="space-y-4">
-        {[
-          { q: "Do you offer remote recording?", a: "Yes. I operate a fully treated home studio with industry-standard multichannel capture capabilities." },
-          { q: "What genres do you specialize in?", a: "My core programming includes Math Rock, Progressive Metal, Jazz Fusion, and Electronic hybrid setups." },
-          { q: "Are lessons available via Zoom?", a: "Affirmative. I utilize a 3-camera setup with high-fidelity audio routing for seamless remote instruction." }
-        ].map((item, i) => (
-          <details key={i} className="group bg-metal-surface border border-metal-highlight/10 rounded-xl overflow-hidden">
-            <summary className="flex items-center justify-between p-6 cursor-pointer font-orbitron text-white group-hover:text-metal-highlight transition-colors">
-              {item.q}
-              <ChevronDown className="group-open:rotate-180 transition-transform" />
-            </summary>
-            <div className="px-6 pb-6 text-metal-accent font-sans leading-relaxed border-t border-metal-highlight/5 pt-4">
-              {item.a}
-            </div>
-          </details>
+const GearSection = () => (
+  <section className="py-32 bg-metal-bg relative overflow-hidden">
+    <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-metal-highlight/30 to-transparent" />
+    <div className="container mx-auto px-6">
+      <div className="text-center mb-20">
+        <h2 className="text-4xl md:text-6xl font-audiowide text-metal-highlight mb-4">Tactical Gear</h2>
+        <p className="font-orbitron text-xs text-metal-accent tracking-[0.4em] uppercase">Equipment & Signal Chain</p>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {gearList.map((group, i) => (
+          <motion.div
+            key={group.category}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.1 }}
+            className="p-8 rounded-2xl border border-metal-highlight/10 bg-metal-surface/40 backdrop-blur-sm hover:border-metal-highlight/30 transition-all group"
+          >
+            <h3 className="font-audiowide text-xl text-metal-highlight mb-6 flex items-center gap-3">
+              <span className="w-1 h-6 bg-metal-highlight/50 group-hover:bg-metal-highlight transition-colors" />
+              {group.category}
+            </h3>
+            <ul className="space-y-4">
+              {group.items.map((item, idx) => (
+                <li key={idx} className="flex items-start gap-3 text-sm font-mono text-metal-accent">
+                   <span className="text-metal-highlight mt-1 opacity-50">>></span>
+                   {item}
+                </li>
+              ))}
+            </ul>
+          </motion.div>
         ))}
+      </div>
+      <div className="mt-20 text-center">
+         <div className="inline-block p-4 border border-dashed border-metal-highlight/20 rounded-lg">
+            <p className="text-xs font-mono text-metal-accent opacity-60 italic">
+              * Specialized gear available upon session requirements.
+            </p>
+         </div>
       </div>
     </div>
   </section>
@@ -255,7 +283,7 @@ export const DrummerLanding: React.FC = () => {
       <About />
       <ExperienceTimeline />
       <VideoGrid />
-      <FAQ />
+      <GearSection />
       
       <footer className="py-12 bg-black border-t border-metal-border text-center">
         <div className="container mx-auto px-6">

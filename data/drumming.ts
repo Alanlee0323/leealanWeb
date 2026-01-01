@@ -162,19 +162,29 @@ export const careerTimeline: CareerEvent[] = [
   }
 ];
 
-export const teachingServices: TeachingService[] = [
+export const gearList = [
   {
-    id: "t1",
-    title: "Private Lessons",
-    level: "All Levels",
-    description: "Personalized drum instruction focusing on technique, reading, and musicality.",
-    features: ["Custom Curriculum", "Video Review", "Goal Setting"]
+    category: "Cymbals",
+    items: [
+      "Zildjian 15\" K Sweet Hi-Hats",
+      "Zildjian 17\" K Sweet Crash",
+      "Zildjian 19\" K Sweet Crash",
+      "Zildjian 21\" K Sweet Ride",
+      "Zildjian 10\" A Flash Splash"
+    ]
   },
   {
-    id: "t2",
-    title: "Advanced Rhythm Workshop",
-    level: "Advanced",
-    description: "Deep dive into polyrhythms, metric modulation, and linear drumming.",
-    features: ["Polyrhythmic Theory", "Odd Meters", "Independence"]
+    category: "Snare & Hardware",
+    items: [
+      "Ludwig LB416 Black Beauty Snare Drum (14\"x5\")",
+      "Yamaha High-End Hardware"
+    ]
+  },
+  {
+    category: "Electronics / Practice",
+    items: [
+      "Yamaha DTX10 Series Electronic Drums",
+      "Real-time low latency monitoring setup"
+    ]
   }
 ];
