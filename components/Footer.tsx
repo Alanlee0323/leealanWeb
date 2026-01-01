@@ -6,58 +6,40 @@ export const Footer: React.FC = () => {
     <footer className="pt-20 pb-10 bg-bg-primary border-t border-border-subtle">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-1 md:col-span-1">
+          <div className="col-span-1 md:col-span-2">
             <a href="#" className="text-2xl font-sans font-bold text-white mb-6 block">
-              SYNTH<span className="text-brand-primary">SAAS</span>
+              ALAN<span className="text-accent-primary">LEE</span>
             </a>
             <p className="text-text-muted text-sm leading-relaxed mb-6">
-              Building the future of automation with 80s aesthetic and modern performance.
+              AI Engineer & Percussionist. Bridging the gap between intelligent systems and dynamic rhythms.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-text-muted hover:bg-brand-primary hover:text-white transition-all shadow-glow hover:shadow-neon">
-                <Twitter size={18} />
+              <a href="mailto:alanalanalan0807@gmail.com" className="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-text-muted hover:bg-accent-primary hover:text-white transition-all">
+                <Mail size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-text-muted hover:bg-brand-primary hover:text-white transition-all shadow-glow hover:shadow-neon">
+              <a href="https://github.com/alanlee0323" className="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-text-muted hover:bg-accent-primary hover:text-white transition-all">
                 <Github size={18} />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-text-muted hover:bg-brand-primary hover:text-white transition-all shadow-glow hover:shadow-neon">
+              <a href="https://www.linkedin.com/in/alan-lee-6b4647294" className="w-10 h-10 rounded-full bg-bg-secondary flex items-center justify-center text-text-muted hover:bg-accent-primary hover:text-white transition-all">
                 <Linkedin size={18} />
               </a>
             </div>
           </div>
 
-          <div>
-            <h4 className="font-sans font-bold text-white mb-6">Product</h4>
-            <ul className="space-y-4 text-sm text-text-muted">
-              <li><a href="#" className="hover:text-brand-accent transition-colors">Features</a></li>
-              <li><a href="#" className="hover:text-brand-accent transition-colors">Integrations</a></li>
-              <li><a href="#" className="hover:text-brand-accent transition-colors">Pricing</a></li>
-              <li><a href="#" className="hover:text-brand-accent transition-colors">Changelog</a></li>
-            </ul>
-          </div>
+          <div className="hidden md:block"></div>
 
           <div>
-            <h4 className="font-sans font-bold text-white mb-6">Company</h4>
+            <h4 className="font-sans font-bold text-white mb-6">Navigation</h4>
             <ul className="space-y-4 text-sm text-text-muted">
-              <li><a href="#" className="hover:text-brand-accent transition-colors">About</a></li>
-              <li><a href="#" className="hover:text-brand-accent transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-brand-accent transition-colors">Blog</a></li>
-              <li><a href="#" className="hover:text-brand-accent transition-colors">Contact</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-sans font-bold text-white mb-6">Legal</h4>
-            <ul className="space-y-4 text-sm text-text-muted">
-              <li><a href="#" className="hover:text-brand-accent transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-brand-accent transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-brand-accent transition-colors">Cookie Policy</a></li>
+              <li><a href="#projects" className="hover:text-accent-primary transition-colors">Projects</a></li>
+              <li><a href="#experience" className="hover:text-accent-primary transition-colors">Experience</a></li>
+              <li><a href="#contact" className="hover:text-accent-primary transition-colors">Contact</a></li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-border-subtle flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-text-muted font-mono">
-          <p>© {new Date().getFullYear()} SynthSaaS Inc. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Alan Lee. All rights reserved.</p>
           <div className="flex items-center gap-2">
              <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
              <span>System Status: Online</span>

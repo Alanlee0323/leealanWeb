@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const TECH_STACK = [
-  "React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Cloudflare", "PostgreSQL", "Redis", "GraphQL", "Docker", "AWS", "Rust"
+  "PyTorch", "TensorRT", "ONNX", "Deep Learning", "Computer Vision", "YOLOv5", "Python", "Docker", "Linux", "React", "TypeScript", "Tailwind", "Machine Learning", "CUDA"
 ];
 
 export const TechMarquee: React.FC = () => {

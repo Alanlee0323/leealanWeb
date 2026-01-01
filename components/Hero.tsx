@@ -60,20 +60,20 @@ export const Hero: React.FC<HeroProps> = ({ mode }) => {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             Alan Lee
-            <span className="block text-text-secondary text-3xl md:text-5xl mt-2 font-medium">
-              {isEngineer ? 'AI Engineer' : 'Percussionist'}
+            <span className="block text-text-secondary text-2xl md:text-4xl mt-2 font-medium">
+              {isEngineer ? 'Full-Cycle AI Engineer' : 'Percussionist'}
             </span>
           </motion.h1>
 
           <motion.p 
             key={`${mode}-p`}
-            className="text-text-muted text-lg max-w-xl mb-10 leading-relaxed font-mono backdrop-blur-sm p-2 rounded"
+            className="text-text-muted text-sm md:text-base max-w-2xl mb-10 leading-relaxed font-mono backdrop-blur-sm p-2 rounded"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
             {isEngineer 
-              ? "// Optimizing Smart Manufacturing with AI. Deploying Deep Learning models from cloud to edge."
+              ? "// M.S. in Electrical Engineering. Specialized in end-to-end AI system development for smart manufacturing, from Human Behavior Recognition (HBR) algorithms to MLOps infrastructure. Experienced in optimizing inference performance, reducing hardware costs, and deploying real-time monitoring dashboards."
               : "// Delivering precision rhythm and dynamic grooves. Exploring the intersection of human feel and technical accuracy."
             }
           </motion.p>

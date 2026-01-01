@@ -53,11 +53,7 @@ export const gigLog: Gig[] = [
   }
 ];
 
-export const biography = `李宇倫，目前於基隆 IF MUSIC STUDIO 及基隆二信高級中學擔任爵士鼓教師（2023年9月至今），是一名鼓手。從國中開始學習爵士鼓至今，在大學期間更是投入大量時間精進技巧並開始從事音樂教學工作，並且於2023年8月取得 Yamaha 音樂能力檢定爵士鼓6級認證。
-
-曾擔任多場重要音樂活動的鼓組技師助理: 河岸留言 Dave Weckl / Tom Kennedy Project（11月）、Yamaha Larnell Lewis 演奏講習會（11月），以及第十一屆臺灣國際打擊樂節川口千里場次（5月），基隆跨年搖滾基隆城鼓組技師(2022)。
-
-演出經歷包括 RIKI 樂團 2023 年 7 月北中南巡演（台北 Revolver、台中迴響、高雄百樂門）專場鼓手，以及 2022 年 10 月基隆好港生活節「引樂人」樂團鼓手。在大學期間曾任國立臺灣海洋大學熱音社樂器教學部幹部（2021年9月），負責爵士鼓教學及活動規劃。`;
+export const biography = `Drummer of RIKI`;
 
 export const careerTimeline: CareerEvent[] = [
   {

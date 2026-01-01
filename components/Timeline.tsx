@@ -4,7 +4,7 @@ import { experiences } from '../data/projects';
 
 export const Timeline: React.FC = () => {
   return (
-    <section className="py-24 px-4 md:px-8 max-w-4xl mx-auto">
+    <section id="experience" className="py-24 px-4 md:px-8 max-w-4xl mx-auto">
       <motion.h2 
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
